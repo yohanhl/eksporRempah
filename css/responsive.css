@@ -104,12 +104,12 @@ header .header-top .top-contacts li {
 body .filter-v1 {
 	margin-top: -10%;
 }
-body .slider-area .slider-home1 .slider-item img {
+/* body .slider-area .slider-home1 .slider-item img {
 	height: auto;
 }
 .slider-area .slider-home1 .slider-item .content-area .slider-content {
 	display: none;
-}
+} */
 header .header-top .top-contacts {
 	display: none;
 }
@@ -349,7 +349,7 @@ header .social-link {
 	display: none;
 }
 .slider-area .owl-theme .owl-pagination {
-	bottom: 18%;
+	bottom: 5%;
 	left: 0;
 	right: 0;
 	text-align: center;
