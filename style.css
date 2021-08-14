@@ -434,7 +434,7 @@ header .header-navbar {
   margin-bottom: 0;
   padding: 0;
   line-height: 100%;
-  background-color: #ffffff;
+  background-color: #264032;
 }
 
 header .header-navbar .main-menu nav ul li,
@@ -447,7 +447,7 @@ header .header-navbar .main-menu nav ul>li>a,
 header .main-menu-v2 .menu-hiden nav ul>li>a {
   background-color: transparent;
   font-size: 18px;
-  color: #333333;
+  color: #ffffff;
   border-bottom: 2px solid transparent;
   line-height: 86px;
   font-family: 'Montserrat', sans-serif;
@@ -854,7 +854,7 @@ header .login-btn a:hover {
   z-index: 9;
   width: 100%;
   /* tambahan */
-  margin-top: 88px;
+  margin-top: 86px;
 }
 
 .slider-area .slider-home1 .slider-item img {
@@ -1315,6 +1315,51 @@ header .login-btn a:hover {
   background-color: #333;
 }
 
+/* Tambahan About */
+
+.about-home {
+  position: relative;
+  /* tambahan */
+  margin-top: 60px;
+  margin-bottom: 150px;
+}
+
+.about-home .about-content h2 {
+  text-transform: uppercase;
+  color: #444444;
+}
+
+.about-home .about-content h2 span {
+  color: #01925E;
+}
+
+.about-home .about-content h4 {
+  font-weight: 500;
+  font-family: 'Roboto', sans-serif;
+  color: #222222;
+  line-height: 1.5em;
+  letter-spacing: 1px;
+}
+
+.about-home .about-content p {
+  color: #222222;
+  margin: 0 0 75px;
+}
+
+.about-home a {
+  background-color: #01925E;
+  padding: 10px 25px;
+}
+
+.about-home .about-content a:hover {
+  background-color: #01925E;
+}
+
+.about-home img {
+  max-width: 100%;
+  display: block;
+}
+
 /*....................................
 5. Feature Properties area start here
 ....................................*/
@@ -1739,7 +1784,6 @@ header .login-btn a:hover {
 
 .property-details-area .content-details-one .last-details ul>li {
   font-weight: 500;
-  text-transform: uppercase;
 }
 
 .property-details-area .content-details-one .last-details a {
@@ -3847,7 +3891,7 @@ header .login-btn a:hover {
 ....................................*/
 footer {
   position: relative;
-  background-color: #3b3b3b;
+  background-color: #264032;
   color: #ffffff;
 }
 
@@ -4173,20 +4217,110 @@ footer .last-v3 ul li a {
 
 .float{
   position:fixed;
-	width:60px;
-	height:60px;
+	width:85px;
+	height:85px;
 	bottom:70px;
 	right:10px;
 	background-color:#0C9;
 	color:#FFF;
-	border-radius:50px;
+	border-radius:90px;
 	text-align:center;
 	box-shadow: 2px 2px 3px #999;
   z-index: 999;
 }
 .my-float{
-	margin-top:14px;
+	margin-top:10px;
 }
+
+.scrollable-menu{
+  height: auto;
+  max-height: 200px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.modal-target {
+  width: auto;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.modal-target:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 999999999999; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  opacity: 1 !important;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image */
+.modal-caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: white;
+  font-weight: 700;
+  font-size: 1em;
+  margin-top: 32px;
+}
+
+/* Add Animation */
+.modal-content, .modal-caption {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-atransform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.modal-close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.modal-close:hover,
+.modal-close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 
 /*....................................
 
@@ -4209,7 +4343,7 @@ footer .last-v3 ul li a {
 
 @media screen and (max-width: 1199px) {
   .slider-area .slider-home1 {
-    margin-top: 95px;
+    margin-top: 90px;
   }
 
   .content-style {
@@ -4231,11 +4365,17 @@ footer .last-v3 ul li a {
   }
   
   .slider-area .slider-home1 {
-    margin-top: 94px;
+    margin-top: 90px;
   }
 
   .content-style {
     margin-left: 70px;
+  }
+
+  .about-home img {
+    max-width: 100%;
+    display: block;
+    margin-top: 50px;
   }
 }
 
